@@ -25,6 +25,7 @@ public class EbankingBackendApplication {
         SpringApplication.run(EbankingBackendApplication.class, args);
     }
     @Bean
+
     CommandLineRunner start(CustomerRepository customerRepository,
         BankAccountRepository bankAccountRepository,
         AccountOperationRepository accountOperationRepository){
