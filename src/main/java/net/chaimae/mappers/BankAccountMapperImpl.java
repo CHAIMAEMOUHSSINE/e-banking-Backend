@@ -1,5 +1,16 @@
 package net.chaimae.mappers;
 
+import net.chaimae.dtos.AccountOperationDTO;
+import net.chaimae.dtos.CurrentBankAccountDTO;
+import net.chaimae.dtos.CustomerDTO;
+import net.chaimae.dtos.SavingBankAccountDTO;
+import net.chaimae.entities.AccountOperation;
+import net.chaimae.entities.CurrentAccount;
+import net.chaimae.entities.Customer;
+import net.chaimae.entities.SavingAccount;
+import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
+
 @Service
 public class BankAccountMapperImpl {
     public CustomerDTO fromCustomer(Customer customer){
